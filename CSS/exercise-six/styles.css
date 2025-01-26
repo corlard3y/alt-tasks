@@ -1,0 +1,591 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* End of CSS Reset */
+
+/* Navigation link styling for the assignments */
+.nav_bar {
+    background-color: #333;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav_bar ul {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    list-style: none;
+}
+
+.nav_bar ul li {
+    margin: 0 1rem;
+}
+
+.nav_bar ul li a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+/* End of Navigation link styling for the assignments */
+
+/* Styling for the hero section content */
+@font-face {
+    font-family: "gilory-regular";
+    src: url("./gilroy-fonts/gilroy-regular.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "gilory-light";
+    src: url("./gilroy-fonts/gilroy-light.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "gilory-semibold";
+    src: url("./gilroy-fonts/gilroy-semibold.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "gilory-bold";
+    src: url("./gilroy-fonts/gilroy-bold.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "gilory-thin";
+    src: url("./gilroy-fonts/gilroy-thin.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "gilory-medium";
+    src: url("./gilroy-fonts/gilroy-medium.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+body {
+    font-family: "gilory-semibold", sans-serif;
+}
+
+.hero_section {
+    background-image: url("./assets/Hero\ section.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1028px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.menu ul,
+.login ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    font-family: "gilory-regular";
+}
+
+.menu ul li,
+.login ul li {
+    margin: 0 1rem;
+    font-size: 14px;
+}
+
+.login ul li {
+    font-family: "gilory-semibold";
+}
+
+.menu ul li a,
+.login ul li a {
+    text-decoration: none;
+    color: #141414;
+    font-weight: 400;
+}
+
+.menu ul li .blue_txt,
+.login ul li a,
+.learn_link .blue_txt,
+.price_btns .get_custom {
+    color: #0065fe;
+}
+
+.login ul li .blue_btn,
+.learn_link .blue_btn,
+.get_btn {
+    background-color: #0065fe;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.learn_link .blue_btn {
+    padding: 0.5rem 1.7rem;
+}
+
+.learn_link .blue_btn,
+.learn_link .blue_txt,
+.price_btns .get_custom,
+.price_btns .select_btn,
+.get_btn {
+    text-decoration: none;
+    font-family: "gilory-semibold";
+    font-size: 14px;
+}
+
+.hero_txt {
+    width: 950px;
+    margin: 0 auto;
+    margin-top: 3.5rem;
+}
+
+.group1-txt-heading {
+    color: #141414;
+    font-size: 2rem;
+    font-family: "gilory-bold";
+    text-align: center;
+    word-spacing: 5px;
+    position: relative;
+}
+
+.img_line {
+    position: absolute;
+    left: 43%;
+    bottom: -6%;
+}
+
+.img-line {
+    width: 125px;
+}
+
+.group1-txt-heading span,
+.group2_txt_one_heading span,
+.group3_txt_one span,
+.price_txt span {
+    color: #005ae2;
+}
+
+.group1_sm_txt {
+    color: #141414;
+    text-align: center;
+    font-family: "gilory-medium";
+    font-size: 0.85rem;
+    width: 72.5ch;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 1rem 1.2rem;
+}
+
+.learn_link {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.learn_link .blue_txt {
+    margin-left: 3rem;
+}
+
+.img_sec {
+    margin: 0 auto;
+}
+
+.img-sec {
+    margin-top: 3.5rem;
+    width: 550px;
+    transform: translate(50%);
+}
+
+/* start of main section */
+.section_numbers {
+    background-color: #f9fbfd;
+}
+
+.group2,
+.group3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.group3 {
+    gap: 20px;
+}
+
+.img_numbers {
+    width: 580px;
+}
+
+.group2_txt_one_heading {
+    font-size: 1.5rem;
+}
+
+.group3_txt_one {
+    font-size: 1rem;
+    position: relative;
+}
+
+.img_gradient_line {
+    position: absolute;
+    left: -4%;
+}
+
+.img_gradient_line,
+.img__line {
+    width: 4px;
+}
+
+.group2_txt_one_heading,
+.group3_txt_one,
+.price_txt {
+    font-family: "gilory-bold";
+}
+
+.one_with_icons,
+.two_with_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.group3_txt_one p,
+.icon_one_wit_txt p,
+.icon_two_wit_txt p,
+.icon_three_wit_txt p,
+.icon_four_wit_txt p,
+.price_txt p {
+    font-size: 12px;
+    font-family: "gilory-medium";
+}
+
+.group3_txt_one p {
+    width: 37ch;
+    padding: 1rem 0;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.icon_one_wit_txt p,
+.icon_two_wit_txt p,
+.icon_three_wit_txt p,
+.icon_four_wit_txt p {
+    width: 35ch;
+    margin-top: 1rem;
+}
+
+.icon_one_wit_txt h3,
+.icon_two_wit_txt h3,
+.icon_three_wit_txt h3,
+.icon_four_wit_txt h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.link-icon,
+.url-icon,
+.qr-code,
+.analytics-icon {
+    width: 45px;
+}
+
+.two_with_icons,
+.price_figure,
+.price_btns {
+    margin-top: 3.5rem;
+}
+
+/*  */
+.perfect-price-design,
+.form-section {
+    margin-top: 6.5rem;
+}
+
+.price_txt {
+    text-align: center;
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.img__line {
+    position: absolute;
+    left: 28%;
+}
+
+.price_txt p {
+    width: 60ch;
+    margin: 0 auto;
+}
+
+.price_btns {
+    text-align: center;
+}
+
+.price_btns .get_custom {
+    border: 1px solid #0065fe;
+    padding: 0.85rem 1.5rem;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.price_btns .select_btn {
+    color: #f9fbfd;
+    background-color: #0065fe;
+    border: none;
+    border-radius: 20px;
+    padding: 0.85rem 2.5rem;
+    font-size: 14px;
+    margin-left: 1rem;
+}
+
+/*  */
+.form-section {
+    background-image: url("./assets/medium-vector.png");
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+}
+
+.form_txt {
+    background-color: #fff;
+    transform: translate(60%, 30%);
+    padding: 2rem;
+    width: 450px;
+    border-radius: 20px;
+}
+
+input,
+select {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    outline: #3284ff;
+    border: 1px solid #3284ff;
+    border-radius: 10px;
+    width: 100%;
+    color: #3284ff;
+    font-family: "gilory-medium";
+    font-size: 14px;
+}
+
+.paste_input {
+    width: 95%;
+}
+
+select {
+    padding: 0.65rem;
+    margin: 0.5rem;
+}
+
+input::placeholder {
+    color: #3284ff;
+    font-size: 12px;
+    font-family: "gilory-medium";
+    padding-left: 1rem;
+}
+
+.two_input,
+.wand_btn {
+    display: flex;
+    align-items: center;
+}
+
+.wand_btn {
+    background-color: #005ae2;
+    color: #fff;
+    padding: 0.65rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "gilory-semibold";
+    width: 95%;
+    justify-content: center;
+    transform: translate(3%, 3%);
+    margin-top: 1rem;
+}
+
+.p_footer {
+    color: #4991ff;
+    font-size: 14px;
+    font-family: "gilory-medium";
+    margin-top: 1rem;
+    margin-left: 0.75rem;
+}
+
+.p_footer span {
+    color: #0065fe;
+}
+
+.faqs-section {
+    background-image: url("./assets/FAQs.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.faqs_txt {
+    position: relative;
+    text-align: center;
+    font-family: "gilory-bold";
+    font-size: 1.2rem;
+    margin-top: 3rem;
+}
+
+.img-line3 {
+    position: absolute;
+    left: 45%;
+    width: 5px;
+}
+
+.faq_img {
+    width: 650px;
+    margin: 0 auto;
+    margin-top: 3.5rem;
+    margin-bottom: 4.5rem;
+}
+
+/* revolution link */
+.revolution-link-section {
+    background-image: url("./assets/medium-vector.png");
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    height: 300px;
+}
+
+.revolution_txt {
+    text-align: center;
+    font-family: "gilory-bold";
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    color: #fff;
+}
+
+.get_btn {
+    background-color: #005ae2;
+    padding: 0.85rem 2.5rem;
+    font-size: 14px;
+}
+
+.start-link {
+    margin-top: 2rem;
+}
+
+/* Footer */
+footer {
+    background-image: url("./assets/footer.png");
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+}
+
+.footer_txt {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.8rem;
+    align-items: flex-start;
+}
+
+.social_icons {
+    width: 150px;
+}
+
+.f-links {
+    width: 650px;
+}
+
+.copyright {
+    position: relative;
+}
+
+.c_img {
+    position: absolute;
+    right: -10%;
+    width: 250px;
+}
