@@ -6,6 +6,9 @@
 body {
     font-family: "Gilroy-Bold", sans-serif;
     width: 100vw;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* gradient styling */
@@ -86,6 +89,7 @@ header {
     align-items: center;
     font-size: 18px;
     font-family: "Gilroy-Regular", sans-serif;
+    white-space: nowrap;
 }
 
 .header-options-list > li > img {
@@ -130,6 +134,7 @@ header {
     color: var(--primary-300-base, #0065fe);
     font-size: 16px;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .btn-none:hover {
@@ -997,4 +1002,208 @@ h4 {
     vertical-align: middle;
     height: auto;
     width: 100%;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .header-main {
+        width: 90%;
+    }
+    .header-options-list {
+        display: none;
+    }
+    .hero-text > h1 {
+        width: 90%;
+        line-height: 75px;
+    }
+
+    .hero-text > p {
+        width: 75%;
+    }
+
+    .frame-vector-div {
+        width: 75%;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .banner-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .banner-items {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-container {
+        flex-direction: column;
+        gap: 44px;
+        padding: 0px;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .product-reason-header {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-reason {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .product-reason p {
+        width: 100%;
+        transform: none;
+    }
+
+    .product-reasons-options {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .product-reasons-option {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-reasons-option p,
+    .product-reasons-option h3 {
+        width: 100%;
+    }
+
+    .pricing-container {
+        padding: 0;
+        text-align: center;
+    }
+
+    .pricing-container-box p {
+        width: 90%;
+        transform: none;
+    }
+
+    .pricing-container img,
+    .product-reason-header img {
+        display: none;
+    }
+
+    .pricing-container-header h1 {
+        line-height: 55px;
+    }
+
+    .price-cards {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .price-card-1,
+    .price-card-3 {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .form-container {
+        margin-top: 50px;
+    }
+
+    #faq {
+        width: 90%;
+        padding: 0;
+    }
+
+    #faq h2 {
+        width: 90%;
+        background: transparent;
+    }
+
+    #faq ul li {
+        width: 100%;
+        background: transparent;
+    }
+
+    .footer-container {
+        height: 100%;
+        flex-direction: column;
+        background: none;
+    }
+
+    .footer-subcontainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-logo-div {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .catalog-container {
+        width: 90%;
+        margin: 50px auto 0 auto;
+        gap: 40px;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    .terms-of-service {
+        padding: 20px 0;
+    }
+
+    .rev h1 {
+        text-align: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .frame-vector-div {
+        display: none;
+    }
+
+    #logo {
+        margin-right: 0;
+    }
+
+    .header-options {
+        display: none;
+    }
+
+    .btn-container {
+        display: none;
+    }
+
+    .btn-container-2 {
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .price-card-1,
+    .price-card-2,
+    .price-card-3 {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px 10px;
+    }
+
+    .frame-vector > img {
+        display: none;
+    }
 }
